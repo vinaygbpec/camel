@@ -1,9 +1,6 @@
 package com.pixel;
 
-import com.pixel.camel.routes.MyCamelRoute;
-import com.pixel.camel.routes.SimpleProcessor;
 import org.apache.camel.CamelContext;
-import org.apache.camel.Route;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.slf4j.Logger;
@@ -12,15 +9,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
 @SpringBootApplication
 public class PixelCamelApplication {
 	private static Logger logger = LoggerFactory.getLogger(PixelCamelApplication.class);
 	public static void main(String[] args) throws Exception{
 		SpringApplication.run(PixelCamelApplication.class, args);
-
+/*
 		CamelContext context = new DefaultCamelContext();
 		context.addRoutes(new RouteBuilder() {
 			@Override
@@ -62,6 +56,8 @@ public class PixelCamelApplication {
 		System.out.println("List of routs:-->"+context.getRoutes());
 		context.stop();
 		return context;
+		*/
 	}
+	
 
 }

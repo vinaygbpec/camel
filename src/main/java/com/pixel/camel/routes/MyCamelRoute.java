@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-@Component
+
 public class MyCamelRoute  {
     private Logger logger = LoggerFactory.getLogger(MyCamelRoute.class);
     CamelContext context = new DefaultCamelContext();
